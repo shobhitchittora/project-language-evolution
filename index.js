@@ -2,7 +2,7 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 function goToDirAndExec(command) {
-  return `cd ~/Desktop/node && ${command}`;
+  return `cd ${process.env.PROJ_PATH} && ${command}`;
 }
 
 async function getCommits() {
