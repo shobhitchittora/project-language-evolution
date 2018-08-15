@@ -1,13 +1,26 @@
 {
   "name": "project-lang-history",
   "version": "1.0.0",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PROJ_PATH=~/Desktop/node node index.js"
+    "start": "PROJ_PATH=~/Desktop/node node index.js",
+    "lint": "./node_modules/.bin/eslint . --fix"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.3.0"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2",
+    "shush": "^1.0.0"
+  }
 }
