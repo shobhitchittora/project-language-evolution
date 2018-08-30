@@ -7,10 +7,10 @@
     }
   ],
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "PROJ_PATH=~/Desktop/node node index.js",
+    "start": "PROJ_PATH=~/Desktop/node node src/index.js",
     "lint": "./node_modules/.bin/eslint . --fix"
   },
   "keywords": [],
@@ -20,6 +20,8 @@
     "eslint": "^5.3.0"
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
+    "node-fetch": "^2.2.0",
     "rimraf": "^2.6.2",
     "shush": "^1.0.0"
   }

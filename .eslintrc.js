@@ -6,12 +6,12 @@ module.exports = {
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 2017
+        "ecmaVersion": 2018
     },
     "rules": {
         "indent": [
             "error",
-            "spaces"
+            "tab"
         ],
         "linebreak-style": [
             "error",
